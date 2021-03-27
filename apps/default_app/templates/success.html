@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Success</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .jumbotron{
+            margin-top: 100px;
+        }
+        #bg{
+            background-image: radial-gradient(circle at center center, transparent,rgb(33,33,33)),repeating-linear-gradient(135deg, rgb(33,33,33) 0px, rgb(33,33,33) 2px,transparent 2px, transparent 10px,rgb(33,33,33) 10px, rgb(33,33,33) 11px,transparent 11px, transparent 21px),repeating-linear-gradient(45deg, rgb(47,47,47) 0px, rgb(47,47,47) 4px,transparent 4px, transparent 8px),linear-gradient(90deg, rgb(33,33,33),rgb(33,33,33));
+        }
+    </style>
+</head>
+<body id="bg">
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4 text-center">Success</h1>
+            <hr class="my-4">
+            <h2 class="display-4 text-center">Hello, {{user.fname}} {{user.lname}}</h3>
+            <hr class="my-4">
+            <div class="text-center">
+                <a href="/logout" class="btn btn-danger">Log out</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
